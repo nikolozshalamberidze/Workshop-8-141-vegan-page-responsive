@@ -1,0 +1,310 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+header{
+  padding: 50px auto;
+}
+
+nav{
+  margin: 50px 0 0 638px;
+}
+
+ul{
+  width: 590px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header li{
+  padding: 24px 18px;
+  background-color: #c4c4c4;
+  border-radius: 0 35px 0 35px;
+}
+
+header li a{
+  font-size: 18px;
+  color: #000;
+}
+
+header li:hover{
+  background-color: #79B331;
+  cursor: pointer;
+}
+
+header li a:hover{
+  color: #ffffff;
+}
+
+body{
+  background-image: url(../img/backgroundpic.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.container-box{
+  width: 358px;
+  height: 124px;
+  margin: 94px 0 0 810px;
+}
+
+.container-box p{
+  padding: 36px;
+  text-align: center;
+}
+.timer{
+  font-size: 36px;
+}
+
+.circle{
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+  background-color: #79B331;
+  animation: movement 5s infinite;
+  position: relative;
+}
+
+@keyframes movement{
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 320px;
+  }
+  50% {
+    top: 220px;
+    left: 320px;
+  }
+  75% {
+    top: 220px;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+
+  }
+}
+
+.tree{
+  width: 1044px;
+  height: 500px;
+  padding-top: 70px;
+  margin-left: 500px;
+  margin-top: 380px;
+  position: relative;
+}
+
+.line{
+  width: 2px;
+  height: 500px;
+  background-color: #c4c4c4;
+  margin: 0 auto;
+}
+
+.rect-1{
+  width: 520px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.text-1{
+  width: 420px;
+  height: 48px;
+}
+.fotoli-1{
+  width: 70px;
+  height: 70px;
+  border-radius: 0px 35px;
+  background-color: #c4c4c4;
+  position: absolute;
+  top: 0;
+  left: 452px;
+}
+
+
+.rect-2{
+  width: 520px;
+  height: 70px;
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-2{
+  width: 420px;
+  height: 48px;
+  margin-left: 120px;
+}
+.fotoli-2{
+  width: 70px;
+  height: 70px;
+  border-radius: 0px 35px;
+  background-color: #c4c4c4;
+  position: absolute;
+  top: 0;
+  right: 452px;
+}
+
+
+
+.rect-3{
+  width: 520px;
+  height: 70px;
+  position: absolute;
+  top: 240px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-3{
+  width: 420px;
+  height: 48px;
+}
+.fotoli-3{
+  width: 70px;
+  height: 70px;
+  border-radius: 0px 35px;
+  background-color: #c4c4c4;
+  position: absolute;
+  top: 0;
+  left: 452px;
+}
+
+
+
+.rect-4{
+  width: 520px;
+  height: 70px;
+  position: absolute;
+  top: 360px;
+  left: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-4{
+  width: 420px;
+  height: 48px;
+  margin-left: 120px;
+}
+.fotoli-4{
+  width: 70px;
+  height: 70px;
+  border-radius: 0px 35px;
+  background-color: #c4c4c4;
+  position: absolute;
+  top: 0;
+  right: 452px;
+}
+
+
+.tree:hover .fotoli{
+  background-color: #79B331;
+}
+
+.tree:hover .text{
+  color: #79B331;
+}
+
+.tree:hover .fotoli-2{
+  transform: rotate(90deg);
+}
+.tree:hover .fotoli-4{
+  transform: rotate(90deg);
+}
+ 
+ 
+
+
+@media only screen and (max-width: 1024px) {
+  nav{
+    margin: 50px 0 0 220px;
+  }
+
+  body{
+    background-position: -220px;
+  }
+
+  .container-box{
+    width: 358px;
+    height: 124px;
+    margin: 94px 0 0 490px;
+  }
+
+  .tree{
+    width: 1044px;
+    height: 500px;
+    padding-top: 70px;
+    margin-left: 300px;
+    margin-top: 380px;
+    position: relative;
+  }
+
+
+  .rect-2{
+    width: 520px;
+    height: 70px;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .text-2{
+    width: 420px;
+    height: 48px;
+    margin-left: 0px;
+  }
+  .fotoli-2{
+    width: 70px;
+    height: 70px;
+    border-radius: 0px 35px;
+    background-color: #c4c4c4;
+    position: absolute;
+    top: 0;
+    left: 452px;
+  }
+
+  .rect-4{
+    width: 520px;
+    height: 70px;
+    position: absolute;
+    top: 360px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .text-4{
+    width: 420px;
+    height: 48px;
+    margin-left: 0px;
+  }
+  .fotoli-4{
+    width: 70px;
+    height: 70px;
+    border-radius: 0px 35px;
+    background-color: #c4c4c4;
+    position: absolute;
+    top: 0;
+    left: 452px;
+  }
+
+}
